@@ -1,0 +1,38 @@
+SALES TAX PROBLEM
+What are we doing?
+------------------
+
+Talking about classes and objects.
+
+Find real world objects in the problem (focus on nouns)
+Products**
+  How much do you cost?
+  What's your title?
+
+
+THERE ARE STEPS TO DO:
+  Figure out rounding
+  Figure out shopping cart
+
+
+
+* Products have a price
+* Products have a tax rate
+    Basic 10%
+    Except Books, Food, Medical Products 0%
+* Products have import tax rate 5%
+
+Products = Description, Price, Tax Rate, Import Duty
+
+* Printing receipt
+
+Name of Item
+Price including tax
+
+Total cost 
+Total amount of taxes
+
+* There are rounding rules
+
+5%, a shelf price of $10 contains (5% * $10/100 rounded up to the nearest 0.05 of sales tax)
+
