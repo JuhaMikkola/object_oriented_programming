@@ -1,8 +1,10 @@
 class Person
 
-  def initialize(name)   #Why this instead of ACCESSOR
-    @name = name
-  end
+  attr_accessor :name
+
+  # def initialize(name)   #Why this instead of ACCESSOR
+  #   @name = name
+  # end
 
   def greeting
     puts "Hi, my name is #{@name}"
@@ -22,12 +24,13 @@ class Instructor < Person
   end
 end
 
-chris = Instructor.new("Chris")  #Don't get this syntax
+chris = Instructor.new  #Don't get this syntax
+chris.name = "Chris"
 chris.greeting
 
-cristina = Student.new("Cristina")
-cristina.greeting
+# cristina = Student.new("Cristina")
+# cristina.greeting
 
 chris.teach
 
-cristina.teach #This is because the teach method does not exist within the Student class
+# cristina.teach #This is because the teach method does not exist within the Student class
