@@ -143,7 +143,6 @@ end
     puts "\nOutput 2:"
     input_2.each do |i|
       puts "#{i.quantity} #{i.name} : #{i.total_price}"
-
       total_tax += ((i.tax_rate) * (i.price))
       total += i.total_price
     end
